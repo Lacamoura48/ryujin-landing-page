@@ -1,0 +1,324 @@
+body {
+  background: #000;
+  font-family: "Tsukimi Rounded";
+  color: white;
+  margin: 0;
+}
+a {
+  font-family: "Tsukimi Rounded";
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.8;
+}
+li {
+  list-style: none;
+}
+.navbar {
+  position: fixed;
+  z-index: 40;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+}
+.nav-gradient {
+  background: linear-gradient(180deg, black, transparent);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 5rem;
+  z-index: 40;
+}
+.navlinks {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  max-width: 80rem;
+  width: 100%;
+  margin-inline: auto;
+  z-index: 50;
+  padding-inline: 20px;
+}
+.navlogo {
+  width: 3.5rem;
+}
+.hero-container {
+  height: 100vh;
+  position: relative;
+}
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.particles {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+}
+.hero-logo-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  z-index: 30;
+}
+
+.hero-logo {
+  width: 65%;
+  margin-inline: auto;
+}
+
+.slogan {
+  text-transform: uppercase;
+  text-align: center;
+}
+.bottom-gradient {
+  background: linear-gradient(0deg, black, transparent);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 5rem;
+  z-index: 30;
+}
+.what-is-ryujin-section {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+.what-is-ryujin {
+  font-size: 2rem;
+  font-style: "Overlock SC";
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+.what-is-ryujin-description {
+  max-width: 40rem;
+  font-weight: 500;
+  width: 100%;
+  margin-inline: auto;
+  text-align: center;
+}
+.projects-section {
+  /* grid grid-cols-2 gap-5 h-[35rem] w-full max-w-3xl mx-auto */
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  height: 30rem;
+  width: 100%;
+  max-width: 40rem;
+  margin-inline: auto;
+  margin-bottom: 15rem;
+}
+.project {
+  border-radius: 2rem;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: #55422c;
+  transition: all 0.8s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: inset 0 0 10px #000000a5;
+}
+.project-category {
+  font-size: 13px;
+}
+.project:hover {
+  background-size: 104% 104%;
+  box-shadow: inset 0 0 20px #000000;
+}
+.project-app {
+  grid-row: span 2 / span 2;
+  background-image: url("./assets/mobile-app.png");
+}
+.project-game {
+  background-image: url("./assets/game.png");
+}
+.project-nft {
+  background-image: url("./assets/nft-collection.png");
+}
+.our-mission-section {
+  padding-bottom: 10rem;
+}
+.scroll-container {
+  transform-origin: right;
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+.scroll-paper {
+  width: 80%;
+}
+.scroll-handle {
+  width: 15%;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.our-misison-container {
+  position: absolute;
+  left: 30%;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.our-mission-title {
+  color: #b02000;
+  font-family: "Overlock SC";
+  font-size: 3rem;
+}
+.our-mission-description {
+  color: #1a1a1a;
+  font-weight: 500;
+}
+.litepaper-link-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: end;
+}
+.litepaper-link {
+  color: #b02000;
+  text-decoration: underline;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 912px) {
+  .scroll-handle {
+    display: none;
+  }
+  .our-misison-container {
+    left: 10%;
+    right: 10%;
+  }
+  .scroll-paper {
+    width: 60rem;
+  }
+  .our-mission-title {
+    font-size: 2rem;
+    margin-bottom: -10px;
+  }
+  .web-link {
+    display: none;
+  }
+
+  .navlinks {
+    justify-content: space-between;
+    gap: 0;
+    max-width: 100%;
+    margin-inline: 0;
+  }
+  .hero-logo {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 700px) {
+    .scroll-paper {
+        scale: 2.5;
+      }
+}
+.team-section {
+  position: relative;
+  background-image: url("./assets/team-background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-block: 16rem;
+}
+.team-top-gradient {
+  background: linear-gradient(180deg, black, transparent);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 12rem;
+  z-index: 30;
+}
+.team-bottom-gradient {
+  background: linear-gradient(0deg, black, transparent);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 12rem;
+  z-index: 30;
+}
+.team-title {
+  font-family: "Overlock SC";
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.members-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6%;
+}
+.member-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 5rem;
+}
+.member-name {
+  font-family: "Shojumaru";
+  font-size: 1.5rem;
+}
+.footer {
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Tsukimi Rounded";
+}
+.footer a {
+  opacity: 0.7;
+}
+.footer a:hover {
+  opacity: 1;
+}
+.bottom-line {
+  font-size: 10px;
+  opacity: 0.5;
+  display: block;
+}
+.navlinks-mobile {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 60;
+    background: #1a1a1a;
+    gap: 20px;
+    padding-top: 10vh;
+    transform: translateX(100%);
+    transition: transform 0.6s
+}

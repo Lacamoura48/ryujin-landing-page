@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryujin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shojumaru&family=Tsukimi+Rounded:wght@400;500;600;700&family=Overlock+SC&display=swap"
+      rel="stylesheet"
+    />
+    <script src="particles.min.js"></script>
+    <script src="main.js" defer></script>
+    <script src="scrollreveal.js"></script>
+  </head>
+  <body>
+    <aside>
+      <ul class="navlinks-mobile">
+        <li>
+          <a style="padding-left: 0" href="#"
+            ><img class="navlogo" src="assets/nav-logo.png" alt="raijin logo"
+          /></a>
+        </li>
+        <li><a href="/">HOME</a></li>
+        <li><a href="/">WHITEPAPER</a></li>
+        <li><a href="/">DISCORD</a></li>
+        <li><a href="/">TWITTER</a></li>
+        <li>
+          <button href="/" onclick="toggleMenu()">
+            <img width="60" src="/assets/x.svg" alt="x" />
+          </button>
+        </li>
+      </ul>
+    </aside>
+    <nav class="navbar">
+      <div class="nav-gradient"></div>
+      <ul class="navlinks">
+        <li>
+          <a style="padding-left: 0" href="#"
+            ><img class="navlogo" src="assets/nav-logo.png" alt="raijin logo"
+          /></a>
+        </li>
+        <li class="web-link"><a href="/">HOME</a></li>
+        <li class="web-link"><a href="/">WHITEPAPER</a></li>
+        <li class="web-link"><a href="/">DISCORD</a></li>
+        <li class="web-link"><a href="/">TWITTER</a></li>
+        <li class="mobile-link">
+          <button href="/" onclick="toggleMenu()">
+            <img width="35" src="/assets/menu.svg" alt="menu" />
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section class="hero-container">
+        <img
+          id="hero-image"
+          src="assets/hero.png"
+          class="hero-image fade-reveal"
+          alt=""
+        />
+        <div id="particles-js" class="particles fade-reveal-d2"></div>
+        <div class="hero-logo-container">
+          <img
+            src="assets/hero-logo.png"
+            class="hero-logo fade-reveal-d1"
+            alt="ryujin main logo"
+          />
+          <span class="slogan fade-reveal-d2"
+            >Where gods whisper secrets to the chosen few.</span
+          >
+        </div>
+        <div class="bottom-gradient"></div>
+      </section>
+      <section class="what-is-ryujin-section">
+        <h2 class="what-is-ryujin fade-reveal-fast">What is ryujin</h2>
+        <p class="what-is-ryujin-description fade-reveal-fast">
+          Ryujin is a revolutionary NFT project that combines Japanese
+          mythology, art, and blockchain technology. Ryujin aims to bring a
+          world of captivating art, collectibles, and interactive storytelling
+          to the blockchain.
+        </p>
+      </section>
+      <section class="projects-section">
+        <a href="#" target="_blank" class="project project-app fade-reveal">
+          <h3 class="project-category">MOBILE APP</h3>
+          <img width="160" src="assets/raijin-logo.png" alt="raijin logo" />
+        </a>
+        <a href="#" target="_blank" class="project project-game fade-reveal">
+          <h3 class="project-category">GAME</h3>
+          <img
+            width="220"
+            src="assets/shuriken-spin-logo.png"
+            alt="shuriken spin logo"
+          />
+        </a>
+        <a href="#" target="_blank" class="project project-nft fade-reveal-d1">
+          <h3 class="project-category">TOKEN & NFT COLLECTION</h3>
+          <img width="100" src="assets/hero-logo.png" alt="ryujin logo" />
+        </a>
+      </section>
+      <section class="our-mission-section">
+        <div class="scroll-container">
+          <img
+            src="/assets/scroll-handle.png"
+            class="scroll-handle"
+            alt="scroll handle"
+          />
+          <img
+            src="/assets/scroll-paper.png"
+            class="scroll-paper"
+            alt="scroll paper"
+          />
+          <div class="our-misison-container">
+            <h2 class="our-mission-title">OUR MISSION</h2>
+            <p class="our-mission-description">
+              Our vision is straightforward: to enrich the digital collectibles
+              space by making it more interactive, valuable, and enjoyable. We
+              want to build a welcoming community where everyone feels at home,
+              whether you’re an artist, collector, or someone curious about the
+              world of NFTs and blockchain. By focusing on user-friendly
+              experiences and pioneering new ways to interact with digital art,
+              Ryujin aims to lead the charge in bridging the gap between
+              traditional art and digital innovation.
+            </p>
+            <div class="litepaper-link-container">
+              <a class="litepaper-link" href="#">SEE THE LITEPAPER</a>
+              <img width="30" src="/assets/arrow-right.svg" alt="arrow icon" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="team-section">
+        <div class="team-top-gradient"></div>
+        <h2 class="team-title fade-reveal">Team</h2>
+
+        <div class="members-container">
+          <div class="member-container fade-reveal">
+            <img src="/assets/oni-profile.png" alt="oni profile picture" />
+            <span class="member-name">ONI</span><span>FOUNDER</span>
+          </div>
+          <div class="member-container fade-reveal">
+            <img src="/assets/oni-profile.png" alt="oni profile picture" />
+            <span class="member-name">OMNI</span
+            ><span>MARKETING & COMMUNITY</span>
+          </div>
+        </div>
+        <div class="members-container">
+          <div class="member-container fade-reveal">
+            <img src="/assets/oni-profile.png" alt="oni profile picture" />
+            <span class="member-name">LACAMOURA</span
+            ><span>HIRED FRONT-END DEV</span>
+          </div>
+          <div class="member-container fade-reveal">
+            <img src="/assets/oni-profile.png" alt="oni profile picture" />
+            <span class="member-name">CIAN</span><span>HIRED LEAD DEV</span>
+          </div>
+          <div class="member-container fade-reveal">
+            <img src="/assets/oni-profile.png" alt="oni profile picture" />
+            <span class="member-name">SOLI</span><span>HIRED BACK-END DEV</span>
+          </div>
+        </div>
+        <div class="team-bottom-gradient"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <img src="/assets/nav-logo.png" width="70" alt="ryujin logo" />
+      <a href="mailto:contact@ryujinnft.com">contact@ryujinnft.com</a>
+      <span class="bottom-line">Ryujin © 2024</span>
+    </footer>
+  </body>
+</html>
