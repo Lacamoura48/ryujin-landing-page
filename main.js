@@ -7,21 +7,14 @@ particlesJS.load('particles-js', 'assets/particlesjs-config.json', function() {
     distance: '0',
     opacity: 0,
     origin: 'bottom',
-    duration: 2800,
+    duration: 2400,
     scale: 0.95
 };
-  const test = {
-    distance: '0',
-    opacity: 0,
-    origin: 'bottom',
-    duration: 2800,
-    scaleX: 0
-};
+
 ScrollReveal().reveal('.fade-reveal-fast', {...revealOptions, duration: 1500});
 ScrollReveal().reveal('.fade-reveal', revealOptions);
 ScrollReveal().reveal('.fade-reveal-d1', {...revealOptions, delay: 250});
 ScrollReveal().reveal('.fade-reveal-d2', {...revealOptions, delay: 500});
-ScrollReveal().reveal('.hellowo', test);
 
 let menuState = false
 const menu = document.querySelector(".navlinks-mobile")
