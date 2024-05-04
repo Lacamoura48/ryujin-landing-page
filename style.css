@@ -45,6 +45,9 @@ li {
   z-index: 50;
   padding-inline: 50px;
 }
+.mobile-link {
+  display: none;
+}
 .navlogo {
   width: 3.5rem;
 }
@@ -234,6 +237,9 @@ li {
   }
   .navlinks {
     padding-inline: 20px;
+  }
+  .mobile-link {
+    display: block;
   }
 }
 @media screen and (max-width: 700px) {
