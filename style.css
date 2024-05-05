@@ -159,6 +159,7 @@ li {
 }
 .our-mission-section {
   padding-bottom: 10rem;
+  overflow-x: hidden;
 }
 .scroll-container {
   transform-origin: right;
@@ -250,6 +251,7 @@ li {
     grid-template-columns: repeat(1, 1fr);
     height: auto;
     padding-inline: 15px;
+    margin-bottom: 5rem;
   }
   .project-app {
     height: 40rem;
@@ -260,12 +262,23 @@ li {
   .project-nft {
     height: 20rem;
   }
+  .our-mission-section {
+    padding-top: 10rem;
+    overflow-x: hidden;
+  }
+  .our-mission-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .our-mission-section p {
+    font-size: 13px;
+  }
 }
 .team-section {
   position: relative;
   background-image: url("./assets/team-background.jpg");
   background-position: top;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   padding-block: 16rem;
 }
