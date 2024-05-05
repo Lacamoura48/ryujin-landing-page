@@ -158,6 +158,7 @@ li {
   background-image: url("./assets/nft-collection.png");
 }
 .our-mission-section {
+  padding-top: 10rem;
   padding-bottom: 10rem;
   overflow-x: hidden;
 }
@@ -264,6 +265,7 @@ li {
   }
   .our-mission-section {
     padding-top: 10rem;
+    padding-bottom: 10rem;
     overflow-x: hidden;
   }
   .our-mission-section h2 {
