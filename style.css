@@ -326,6 +326,11 @@ li {
   font-family: "Shojumaru";
   font-size: 1.5rem;
 }
+.member-role {
+  text-align: center;
+  width: 15rem;
+  display: block;
+}
 .member-profile-picture {
   filter: blur(12px);
   transform: scale(1.2);
